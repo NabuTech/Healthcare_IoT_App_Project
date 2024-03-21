@@ -1,0 +1,9 @@
+# Overview of the Concept:
+
+The project concept revolves around developing a Healthcare Internet of Things application focused
+on health monitoring. This app aims to address the increasing demand for user-friendly accessible
+solutions addressing the challenges of independent living for an ageing population. Leveraging
+Internet of Things, the app utilizes flexibility of a Raspberry Pi to act as a server collating data,
+hosting interface, communicating with input (smart phone) and output (TV). The key objective is to
+use a voice activated interface to show real-time health monitoring on a TV from collecting data
+from IoT devices such as a smart wearable like the apple watch.
