@@ -11,7 +11,6 @@ The Healthcare IoT Application leverages the flexibility of a Raspberry Pi to ac
 - **Business Case Study**: Business Case Document highlighting the rationale and market analysis for the project.
 - **Analysis Report**: Provides an in-depth analysis of the project, including technical specifications and feasability.
 - **Design Prototype and Evaluation Report**: Includes the design prototype of the application along with an evaluation report detailiing its effectiveness.
-- **Assignment_X_Folders**: Contains documents and resources related to each assignment.
 - **Documentation**: General project documentation such as project plans and user manuals.
 - **Website**: Landing page website for public presentation.
 - **Source_Code**: Source code for the Raspberry Pi server, mobile app, and IoT devices.
