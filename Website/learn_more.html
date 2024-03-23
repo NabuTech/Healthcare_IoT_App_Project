@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/healthcare.css">
+
+    <title>Healthcare IoT Patient Monitoring</title>
+</head>
+
+<body>
+
+    <section id="myCarousel" class="carousel slide" data-interval="5000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="carousel-item-content">
+                            <h3>Problem Concept</h3>
+                            <ul>
+                                <li>Increasing Demand for remote healthcare monitoring.</li>
+                                <li>Importance of Interaction Design in Healthcare</li>
+                                <li>Focus on Accessibilty, User-Centered Design</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="d-block w-100" src="./Images/georg-arthur-pflueger-TeWwYARfcM4-unsplash.jpg" alt="First slide">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="carousel-item-content">
+                            <h3>The App</h3>
+                            <ul>
+                                <li>Utilises Raspberry-Pi to collect data from Internet of Things devices</li>
+                                <li>Using Voice-controlled interface connected to TV</li>
+                                <li>Ability to also access the app through smart phone</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="d-block w-100" src="./Images/jonas-leupe-Fhwg7BrGUpk-unsplash.jpg" alt="Second slide">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="carousel-item-content">
+                            <h3>Target Audience</h3>
+                            <ul>
+                                <li>Users with disabilites, poor health, chronic conditions</li>
+                                <li>Caregivers/Family Members to monitor health needs of others</li>
+                                <li>Health Proffesionals can analyse the data to advise adjustments</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="d-block w-100" src="./Images/luke-chesser-JKUTrJ4vK00-unsplash.jpg" alt="Third slide">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="carousel-item-content">
+                            <h3>Apples Health App</h3>
+                            <ul>
+                                <li>Track Data from Apple Watch or third-party apps</li>
+                                <li>Emergency SOS to allow quickly call for help and notify emergency contacts</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="d-block w-100" src="./Images/carlos-muza-hpjSkU2UYSU-unsplash.jpg"alt="Third slide">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="carousel-item-content">
+                            <h3>Google Fit</h3>
+                            <ul>
+                                <li>Setting Personalized goals from tracked data</li>
+                                <li>View real-time stats</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="d-block w-100" src="./Images/mitchell-luo-jz4ca36oJ_M-unsplash(1).jpg" alt="Third slide">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="carousel-item-content">
+                            <h3>Amazon Echo Show</h3>
+                            <ul>
+                                <li>Voice Activated Interface</li>
+                                <li>Set voice assitant reminders</li>
+                                <li>Support video call with healthcare proffesionals</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="d-block w-100" src="./Images/andres-urena-tsBropDpnwE-unsplash.jpg" alt="Third slide">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="get-involved" class="get-involved py-5 text-center">
+        <div class="container">
+            <h2>Get Involved</h2>
+            <p>Help us improve our products and services by providing your feedback through the following forms:</p>
+            <ul class="list-unstyled">
+                <li><a href="#survey-form">Health Monitoring App User Survey</a></li>
+                <li><a href="#product-review">Product Reviews</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="survey-form" class="user-survey">
+        <h2>Health Monitoring App User Survey</h2>
+
+        <div class="survey-blurb">
+            <p>Fill out the survey below to provide valuable feedback for improving our health monitoring app.</p>
+            <button id="toggle-form">Open Survey Form</button>
+        </div>
+    
+        <form id="health-survey-form" style="display: none;">
+            <label for="user-status">What would best describe your interest in the app?</label>
+            <select id="user-status" name="user-status">
+                <option value="potential-user">Potential User</option>
+                <option value="caregiver">Caregiver/Family Member</option>
+                <option value="healthcare-proffesional">Healthcare Proffesional</option>
+            </select>
+
+            <label for="monitoring-app-usage">Do you or someone you know currently use any health monitoring apps or devices? If yes, please specify.</label>
+            <textarea id="monitoring-app-usage" name="monitoring-app-usage"></textarea>
+
+            <label for="crucial-health-info">What health-related information do you believe is most crucial for monitoring, especially for the elderly or those with health issues?</label>
+            <textarea id="crucial-health-info" name="crucial-health-info"></textarea>
+
+            <label for="priority-features">Select the three most important features in a health monitoring app:</label>
+                <div id="priority-features">
+                    <input type="checkbox" name="real-time-tracking" id="real-time-tracking">
+                    <label for="real-time-tracking" class="priority-label">Real-time health data tracking</label>
+
+                    <input type="checkbox" name="medication-reminders" id="medication-reminders">
+                    <label for="medication-reminders" class="priority-label">Medication reminders</label>
+
+                    <input type="checkbox" name="emergency-alerts" id="emergency-alerts">
+                    <label for="emergency-alerts" class="priority-label">Emergency alerts</label>
+
+                    <input type="checkbox" name="communication-professionals" id="communication-professionals">
+                    <label for="communication-professionals" class="priority-label">Communication with healthcare professionals</label>
+
+                    <input type="checkbox" name="user-friendly-interface" id="user-friendly-interface">
+                    <label for="user-friendly-interface" class="priority-label">User-friendly interface</label>
+
+                    <input type="checkbox" name="wearable-device-integration" id="wearable-device-integration">
+                    <label for="wearable-device-integration"class="priority-label">Integration with Wearable Devices</label>
+
+                    <input type="checkbox" name="family-access" id="family-access">
+                    <label for="family-access"class="priority-label">Family/Caregiver Access</label>
+
+                    <input type="checkbox" name="health-trends-analysis" id="health-trends-analysis">
+                    <label for="health-trends-analysis"class="priority-label">Health Trends Analysis</label>
+
+                    <input type="checkbox" name="customizable-reminders" id="customizable-reminders">
+                    <label for="customizable-reminders"class="priority-label">Customizable Reminders</label>
+                </div>
+
+            
+
+            <label for="ui-design-preference">What kind of user interface design do you find most intuitive and user-friendly?</label>
+            <select id="ui-design-preference" name="ui-design-preference">
+                <option value="touch-based">Traditional touch-based interface</option>
+                <option value="voice-activated">Voice-activated interface</option>
+                <option value="combination">Combination of both</option>
+            </select>
+
+            <label for="health-associated-design">Are there any specific colors, fonts, or design elements that you associate with health and well-being?</label>
+            <textarea id="health-associated-design" name="health-associated-design"></textarea>
+
+            <label for="easy-navigation">How important is it for the app to have a simple and easy-to-navigate design?</label>
+            <select id="easy-navigation" name="easy-navigation">
+                <option value="very-important">Very Important</option>
+                <option value="important">Important</option>
+                <option value="neutral">Neutral</option>
+                <option value="not-important">Not Important</option>
+                <option value="very-not-important">Very Not Important</option>
+            </select>
+
+            <label for="iot-integration">How comfortable are you with the idea of integrating IoT devices for health monitoring?</label>
+            <select id="iot-integration" name="iot-integration">
+                <option value="very-comfortable">Very Comfortable</option>
+                <option value="comfortable">Comfortable</option>
+                <option value="neutral">Neutral</option>
+                <option value="uncomfortable">Uncomfortable</option>
+                <option value="very-uncomfortable">Very Uncomfortable</option>
+            </select>
+
+            <label for="beneficial-iot-devices">What types of IoT devices do you think would be most beneficial for health monitoring in your or your loved ones' daily lives?</label>
+            <textarea id="beneficial-iot-devices" name="beneficial-iot-devices"></textarea>
+
+            <label for="accessibility-features">Are there any specific accessibility features you think should be prioritized in the app?</label>
+            <textarea id="accessibility-features" name="accessibility-features"></textarea>
+
+            <label for="expectations-from-app">What would be your main expectations from a health monitoring app, especially one designed for the elderly or those with health issues?</label>
+            <textarea id="expectations-from-app" name="expectations-from-app"></textarea>
+
+            <label for="improvements-to-existing-apps">If there's one thing you could change or improve in existing health monitoring apps, what would it be?</label>
+            <textarea id="improvements-to-existing-apps" name="improvements-to-existing-apps"></textarea>
+
+            <button type="submit">Submit Survey</button>
+        </form>
+
+    
+    </section>
+
+    <section id="product-review" class="user-survey">
+        <h2>Product Reviews</h2>
+    
+        <div class="review-blurb">
+            <p>Share your feedback on our products by submitting reviews below.</p>
+            <button id="toggle-review-form">Write a Review</button>
+        </div>
+    
+        <!-- Initially set the review form to display: none -->
+        <form id="product-review-form" style="display: none;">
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" name="product-name">
+        
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating">
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Very Good</option>
+                <option value="3">3 - Good</option>
+                <option value="2">2 - Fair</option>
+                <option value="1">1 - Poor</option>
+            </select>
+        
+            <label for="review-title">Review Title:</label>
+            <input type="text" id="review-title" name="review-title">
+        
+            <label for="review">Your Review:</label>
+            <textarea id="review" name="review"></textarea>
+        
+            <label for="recommend">Would you recommend this product?</label>
+            <select id="recommend" name="recommend">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        
+            <label for="improvements">Suggestions for Improvement:</label>
+            <textarea id="improvements" name="improvements"></textarea>
+        
+            <button type="submit">Submit Review</button>
+        </form>
+        
+    </section>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+          
+          $('#myCarousel').carousel();
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+        const toggleButton = document.getElementById('toggle-form');
+        const surveyForm = document.getElementById('health-survey-form');
+
+        toggleButton.addEventListener('click', function() {
+            // Toggle the display property of the form
+            if (surveyForm.style.display === 'none') {
+                surveyForm.style.display = 'block';
+                toggleButton.innerText = 'Close Survey Form';
+                // Scroll to the form
+                surveyForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else {
+                surveyForm.style.display = 'none';
+                toggleButton.innerText = 'Open Survey Form';
+            }
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggleReviewButton = document.getElementById('toggle-review-form');
+        const reviewForm = document.getElementById('product-review-form');
+
+        toggleReviewButton.addEventListener('click', function() {
+            // Toggle the display property of the review form
+            if (reviewForm.style.display === 'none') {
+                reviewForm.style.display = 'block';
+                toggleReviewButton.innerText = 'Close Review Form';
+                // Scroll to the review form
+                reviewForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else {
+                reviewForm.style.display = 'none';
+                toggleReviewButton.innerText = 'Write a Review';
+            }
+        });
+    });
+
+    </script>
+
+    
+
+</body>
+
+</html>
