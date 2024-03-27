@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Overview Mockup - Large Screen</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-03NAjDInqJr4WZlNFrl/C8vZ5st3Iy5ymqtEJRg8i7v6PbyJBI2XxFJiCW7zWxJv" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .dashboard-content {
+      padding: 50px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 50px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h3 {
+      color: #495057;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .card p {
+      font-size: 1.5rem;
+      line-height: 2;
+      color: #6c757d;
+    }
+
+    .card ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .card ul li {
+      margin-bottom: 20px;
+    }
+
+    .card ul li::before {
+      content: "\2022";
+      color: #007bff;
+      font-weight: bold;
+      display: inline-block;
+      width: 2em;
+      margin-left: -2em;
+    }
+
+    .chart {
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    .chart img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .chart p {
+      font-style: italic;
+      font-size: 1.5rem;
+      color: #6c757d;
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Dashboard Overview Section -->
+<section id="dashboard-overview" class="py-5">
+  <div class="container">
+    <div class="row dashboard-content">
+      <div class="col-lg-4">
+        <div class="card">
+          <h3>Summary</h3>
+          <p>Welcome back, John!</p>
+          <ul>
+            <li>Steps taken today: 8,245</li>
+            <li>Heart rate: 72 bpm</li>
+            <li>Blood pressure: 120/80 mmHg</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card">
+          <h3>Insights</h3>
+          <p>Based on your recent activity:</p>
+          <ul>
+            <li>Your activity level has been consistent this week. Keep up the good work!</li>
+            <li>Consider adding more fruits and vegetables to your diet to improve your overall health.</li>
+            <li>Remember to take your medication as prescribed to maintain stable blood pressure.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card">
+          <h3>Health Trends</h3>
+          <!-- Placeholder for health trend charts -->
+          <div class="chart">
+            <img src="health_trends_chart1.png" alt="Health Trends Chart 1">
+            <p>Steps Taken Over the Past Week</p>
+          </div>
+          <div class="chart">
+            <img src="health_trends_chart2.png" alt="Health Trends Chart 2">
+            <p>Heart Rate Variability Over Time</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

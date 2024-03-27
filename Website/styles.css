@@ -1,0 +1,110 @@
+:root {
+    /* Primary Colors */
+    --primary-color: #4CAF50; /* Green for healthcare and vitality */
+    --secondary-color: #FFFFFF; /* White for cleanliness */
+    
+    /* Accent Colors */
+    --accent-color1: #2196F3; /* Blue for technology and innovation */
+    --accent-color2: #757575; /* Grey for modernity and neutrality */
+  
+    /* Additional Colors */
+    --background-color: #f8f9fa; /* Light grey for a sterile environment */
+    --text-color: #333333; /* Dark grey for readability */
+
+    /* New Color */
+    --border-color: #CCCCCC; /* Light grey for borders */
+    --border-color-bright: #B3C6FF; 
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar-nav .nav-link {
+    color: var(--secondary-color);
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--accent-color1);
+}
+
+.header {
+    background-color: var(--secondary-color);
+    color: var(--accent-color1);
+}
+
+.bg-light {
+    background-color: var(--secondary-color);
+}
+
+.bg-light p {
+    color: var(--text-color);
+}
+
+.lead {
+    font-size: 1.25rem; /* Adjust as needed */
+}
+
+.bg-light h2,
+.py-5 h2 {
+    color: var(--primary-color);
+}
+
+.bg-light h2::after {
+    background-color: var(--primary-color);
+}
+
+.py-5 {
+    background-color: var(--background-color);
+}
+
+.py-5 p {
+    color: var(--text-color);
+}
+
+.spacer {
+    width: 120px;
+}
+
+.spacer-footer {
+    padding-bottom: 40px;
+}
+
+/* Add this CSS to your stylesheet */
+#wireframe-gallery {
+    
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container-heading {
+    margin-bottom: 20px;
+  }
+  
+  .gallery-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .wireframe-item {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .wireframe-item img {
+    max-width: 100%;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+  }
+  
+  .wireframe-item img:hover {
+    transform: scale(2.5); /* Scale the image slightly on hover */
+  }

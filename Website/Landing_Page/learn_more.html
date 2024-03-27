@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/healthcare.css">
+
+    <title>Healthcare IoT Patient Monitoring</title>
+</head>
+
+<body>
+
+    <section id="get-involved" class="get-involved py-5 text-center">
+        <div class="container">
+            <h2>Get Involved</h2>
+            <p>Help us develop the user experience of the application by providing your feedback on the following:</p>
+            <ul class="list-unstyled">
+                <li><a class="cta-button-survey" href="health_survey_form.html">Health Monitoring App User Survey</a></li>
+                <li><a class="cta-button-review" href="user_experience_form.html">Other Products User Experience</a></li>
+            </ul>
+        </div>
+    </section>
+
+     <section id="myCarousel" class="carousel slide" data-interval="3000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="carousel-item-content">
+                            <h3>Problem Concept</h3>
+                            <ul>
+                                <li>Increasing Demand for remote healthcare monitoring.</li>
+                                <li>Importance of Interaction Design in Healthcare</li>
+                                <li>Focus on Accessibilty, User-Centered Design</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="d-block w-100" src="Images/georg-arthur-pflueger-TeWwYARfcM4-unsplash.jpg" alt="First slide">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="carousel-item-content">
+                            <h3>The App</h3>
+                            <ul>
+                                <li>Utilises Raspberry-Pi to collect data from Internet of Things devices</li>
+                                <li>Using Voice-controlled interface connected to TV</li>
+                                <li>Ability to also access the app through smart phone</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="d-block w-100" src="Images/jonas-leupe-Fhwg7BrGUpk-unsplash.jpg" alt="Second slide">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="carousel-item-content">
+                            <h3>Target Audience</h3>
+                            <ul>
+                                <li>Users with disabilites, poor health, chronic conditions</li>
+                                <li>Caregivers/Family Members to monitor health needs of others</li>
+                                <li>Health Proffesionals can analyse the data to advise adjustments</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="d-block w-100" src="Images/luke-chesser-JKUTrJ4vK00-unsplash.jpg" alt="Third slide">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="carousel-item-content">
+                            <h3>Apples Health App</h3>
+                            <ul>
+                                <li>Track Data from Apple Watch or third-party apps</li>
+                                <li>Emergency SOS to allow quickly call for help and notify emergency contacts</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="d-block w-100" src="Images/carlos-muza-hpjSkU2UYSU-unsplash.jpg"alt="Third slide">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="carousel-item-content">
+                            <h3>Google Fit</h3>
+                            <ul>
+                                <li>Setting Personalized goals from tracked data</li>
+                                <li>View real-time stats</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="d-block w-100" src="Images/mitchell-luo-jz4ca36oJ_M-unsplash(1).jpg" alt="Third slide">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="carousel-item-content">
+                            <h3>Amazon Echo Show</h3>
+                            <ul>
+                                <li>Voice Activated Interface</li>
+                                <li>Set voice assitant reminders</li>
+                                <li>Support video call with healthcare proffesionals</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="d-block w-100" src="Images/andres-urena-tsBropDpnwE-unsplash.jpg" alt="Third slide">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+          
+          $('#myCarousel').carousel();
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleSurveyButton = document.getElementById('toggle-form');
+            const surveyForm = document.getElementById('health-survey-form');
+
+            toggleSurveyButton.addEventListener('click', function() {
+                toggleFormVisibility(surveyForm, toggleSurveyButton);
+            });
+
+            const toggleUserExperienceButton = document.getElementById('toggle-user-experience');
+            const userExperienceForm = document.getElementById('user-experience-form');
+
+            toggleUserExperienceButton.addEventListener('click', function() {
+                toggleFormVisibility(userExperienceForm, toggleUserExperienceButton);
+            });
+
+            function toggleFormVisibility(form, toggleButton) {
+                if (form.style.display === 'none' || form.style.display === '') {
+                    form.style.display = 'block';
+                    toggleButton.innerText = 'Close Form';
+                    form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                } else {
+                    form.style.display = 'none';
+                    toggleButton.innerText = 'Open Form';
+                }
+            }
+        });
+
+    </script>
+
+    
+
+</body>
+
+</html>

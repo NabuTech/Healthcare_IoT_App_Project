@@ -1,0 +1,163 @@
+:root {
+    /* Primary Colors */
+    --primary-color: #4CAF50; /* Green for healthcare and vitality */
+    --secondary-color: #FFFFFF; /* White for cleanliness */
+    
+    /* Accent Colors */
+    --accent-color1: #2196F3; /* Blue for technology and innovation */
+    --accent-color2: #757575; /* Grey for modernity and neutrality */
+  
+    /* Additional Colors */
+    --background-color: #f8f9fa; /* Light grey for a sterile environment */
+    --text-color: #333333; /* Dark grey for readability */
+
+    /* New Color */
+    --border-color: #CCCCCC; /* Light grey for borders */
+    --border-color-bright: #B3C6FF; 
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+
+.portal-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh; /* Set container height to fill viewport */
+}
+
+.portal-element {
+    width: calc(33.33% - 20px); /* Three columns with 20px margin between elements */
+    height: calc(33.33% - 20px); /* Three rows with 20px margin between elements */
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: 2px solid var(--border-color-bright); /* New border property */
+    margin: 10px; /* Add margin between elements */
+    box-sizing: border-box; /* Include padding and border in the width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.portal-element:hover {
+    background-color: var(--accent-color1);
+}
+
+.portal-element h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.portal-element p {
+    color: var(--accent-color2);
+}
+
+.portal-intro {
+    background-color: var(--background-color); /* Background color */
+    border: 2px solid var(--border-color-bright); /* Border */
+    border-radius: 8px; /* Border radius */
+    padding: 20px; /* Padding */
+    display: flex; /* Flex container */
+    flex-direction: column;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    text-align: center; /* Text alignment */
+    cursor: default;
+    border: none;
+    background: white;
+}
+
+.portal-intro a {
+    text-decoration: none; /* Remove link underline */
+    
+}
+
+.portal-element.portal-intro:hover {
+    background-color: var(--background-color); /* No hover effect */
+}
+
+
+.portal-product {
+    background-color: #FFFFFF; /* White background for product element */
+    border: none; /* Remove border */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative;
+}
+
+.product-thumbnail {
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.product-thumbnail img {
+    width: 100%;
+    display: block; /* Ensure the image is a block element */
+    border-radius: 8px; /* Add border radius */
+}
+
+.product-thumbnail h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: var(--accent-color1); /* Use primary color for heading */
+    z-index: 1; /* Ensure the heading is above the image */
+}
+
+.portal-element.image-placeholder {
+    background-color: white;
+    border: none; /* Remove border */
+    display: flex; /* Flex container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative; /* Position relative for absolute positioning */
+    cursor: default;
+}
+
+.portal-element.image-placeholder img {
+    width: 100%; /* Ensure the image fills the container */
+    border-radius: 8px; /* Add border radius */
+}
+
+
+
+@media (max-width: 768px) {
+    .portal-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portal-element {
+        width: 100%; /* Each element takes up full width in mobile view */
+        margin-bottom: 20px; /* Add margin between elements */
+    }
+}

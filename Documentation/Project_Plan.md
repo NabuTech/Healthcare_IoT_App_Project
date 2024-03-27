@@ -1,6 +1,6 @@
 # Project Plan
 
-Thur 21/03/2024
+## Thur 21/03/2024
 
 Survey
 
@@ -21,5 +21,23 @@ Evaluation
 Publish
 [] Publish link to landing page on Twitter and LinkedIn and find some participants
 
-https://www.klientboost.com/landing-pages/landing-page-for-startup/
+Resource - https://www.klientboost.com/landing-pages/landing-page-for-startup/
+
+
+## Mon 25/3/24
+
+- [y] Task 1
+    - [] Update Project Portal
+- [] Task 2
+    - [] Finish User Surveys
+    - [] Complete 4 Surveys
+    - [] Survey Report
+- [] Task 3
+    - [] Evaluator Profiles
+    - [] Evaluation Report
+- [y] Task 4
+- [y] Task 5
+- [] Task 6
+    - [] Task Flow Diagram
+    - [] Wireframe Sketches.
 

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/healthcare.css">
+
+    <title>Healthcare IoT Patient Monitoring</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2>Health Monitoring App User Survey</h2>
+        <form id="health-survey-form">
+            <fieldset>
+                <legend>General Information</legend>
+                        <label for="user-status">What would best describe your interest in the app?</label>
+                        <select id="user-status" name="user-status">
+                            <option value="potential-user">Potential User</option>
+                            <option value="caregiver">Caregiver/Family Member</option>
+                            <option value="healthcare-proffesional">Healthcare Proffesional</option>
+                        </select>
+
+                        <label for="monitoring-app-usage">Do you or someone you know currently use any health monitoring apps or devices? If yes, please specify.</label>
+                        <textarea id="monitoring-app-usage" name="monitoring-app-usage"></textarea>
+
+                        <label for="crucial-health-info">What health-related information do you believe is most crucial for monitoring, especially for the elderly or those with health issues?</label>
+                        <textarea id="crucial-health-info" name="crucial-health-info"></textarea>
+                        <br>
+                        <label for="priority-features">Select the three most important features in a health monitoring app:</label>
+                            <div id="priority-features">
+                                <input type="checkbox" name="real-time-tracking" id="real-time-tracking">
+                                <label for="real-time-tracking" class="priority-label">Real-time health data tracking</label>
+
+                                <input type="checkbox" name="medication-reminders" id="medication-reminders">
+                                <label for="medication-reminders" class="priority-label">Medication reminders</label>
+
+                                <input type="checkbox" name="emergency-alerts" id="emergency-alerts">
+                                <label for="emergency-alerts" class="priority-label">Emergency alerts</label>
+
+                                <input type="checkbox" name="communication-professionals" id="communication-professionals">
+                                <label for="communication-professionals" class="priority-label">Communication with healthcare professionals</label>
+
+                                <input type="checkbox" name="user-friendly-interface" id="user-friendly-interface">
+                                <label for="user-friendly-interface" class="priority-label">User-friendly interface</label>
+
+                                <input type="checkbox" name="wearable-device-integration" id="wearable-device-integration">
+                                <label for="wearable-device-integration"class="priority-label">Integration with Wearable Devices</label>
+
+                                <input type="checkbox" name="family-access" id="family-access">
+                                <label for="family-access"class="priority-label">Family/Caregiver Access</label>
+
+                                <input type="checkbox" name="health-trends-analysis" id="health-trends-analysis">
+                                <label for="health-trends-analysis"class="priority-label">Health Trends Analysis</label>
+
+                                <input type="checkbox" name="customizable-reminders" id="customizable-reminders">
+                                <label for="customizable-reminders"class="priority-label">Customizable Reminders</label>
+                            </div>
+
+                        
+
+                        <label for="ui-design-preference">What kind of user interface design do you find most intuitive and user-friendly?</label>
+                        <select id="ui-design-preference" name="ui-design-preference">
+                            <option value="touch-based">Traditional touch-based interface</option>
+                            <option value="voice-activated">Voice-activated interface</option>
+                            <option value="combination">Combination of both</option>
+                        </select>
+
+                        <label for="health-associated-design">Are there any specific colors, fonts, or design elements that you associate with health and well-being?</label>
+                        <textarea id="health-associated-design" name="health-associated-design"></textarea>
+
+                        <label for="easy-navigation">How important is it for the app to have a simple and easy-to-navigate design?</label>
+                        <select id="easy-navigation" name="easy-navigation">
+                            <option value="very-important">Very Important</option>
+                            <option value="important">Important</option>
+                            <option value="neutral">Neutral</option>
+                            <option value="not-important">Not Important</option>
+                            <option value="very-not-important">Very Not Important</option>
+                        </select>
+
+                        <label for="iot-integration">How comfortable are you with the idea of integrating IoT devices for health monitoring?</label>
+                        <select id="iot-integration" name="iot-integration">
+                            <option value="very-comfortable">Very Comfortable</option>
+                            <option value="comfortable">Comfortable</option>
+                            <option value="neutral">Neutral</option>
+                            <option value="uncomfortable">Uncomfortable</option>
+                            <option value="very-uncomfortable">Very Uncomfortable</option>
+                        </select>
+
+                        <label for="beneficial-iot-devices">What types of IoT devices do you think would be most beneficial for health monitoring in your or your loved ones' daily lives?</label>
+                        <textarea id="beneficial-iot-devices" name="beneficial-iot-devices"></textarea>
+
+                        <label for="accessibility-features">Are there any specific accessibility features you think should be prioritized in the app?</label>
+                        <textarea id="accessibility-features" name="accessibility-features"></textarea>
+
+                        <label for="expectations-from-app">What would be your main expectations from a health monitoring app, especially one designed for the elderly or those with health issues?</label>
+                        <textarea id="expectations-from-app" name="expectations-from-app"></textarea>
+
+                        <label for="improvements-to-existing-apps">If there's one thing you could change or improve in existing health monitoring apps, what would it be?</label>
+                        <textarea id="improvements-to-existing-apps" name="improvements-to-existing-apps"></textarea>
+
+                        <button type="submit">Submit Survey</button>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>
+    
