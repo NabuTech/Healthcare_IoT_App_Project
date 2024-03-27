@@ -2,6 +2,9 @@
 
 Welcome to the Healthcare IoT Application repository. This project focuses on developing an innovative application for health monitoring using Internet of Things (IoT) technology, aimed at addressing the challenges of independant living for an aging population.
 
+You can navigate this site here:  https://nabutech.github.io/Healthcare_IoT_App_Project/
+
+
 ## Overview
 
 The Healthcare IoT Application leverages the flexibility of a Raspberry Pi to act as a server, collating data from IoT devices and hosting a user-friendly interface. The key feature of this application is its voice-activated interface, which displays real-time health monitoring data on a TV screen, obtained from IoT devices such as smart wearables like the Apple Watch.
