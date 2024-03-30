@@ -16,6 +16,16 @@
         <form id="health-survey-form">
             <fieldset>
                 <legend>General Information</legend>
+
+                <!-- New Name Question -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <!-- New Age Question -->
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required><br><br>
+
+
                         <label for="user-status">What would best describe your interest in the app?</label>
                         <select id="user-status" name="user-status">
                             <option value="potential-user">Potential User</option>
@@ -101,10 +111,27 @@
                         <label for="improvements-to-existing-apps">If there's one thing you could change or improve in existing health monitoring apps, what would it be?</label>
                         <textarea id="improvements-to-existing-apps" name="improvements-to-existing-apps"></textarea>
 
-                        <button type="submit">Submit Survey</button>
+                        <button type="submit" id="submit-survey">Submit Survey</button>
             </fieldset>
         </form>
     </div>
+
+    <script>
+        document.getElementById("submit-survey").addEventListener("click", function () {
+        // Get form data
+        var formData = {
+            name: document.getElementById("name").value,
+            age: document.getElementById("age").value
+            // Add other form fields as needed
+        };
+    
+        // Construct query parameters from form data
+        var queryParams = Object.keys(formData).map(key => `${encodeURIComponent(key)}=${encodeURIComponent(formData[key])}`).join('&');
+    
+        // Redirect to results page with query parameters
+        window.location.href = `results.html?${queryParams}`;
+    });
+    </script>
 
 </body>
 

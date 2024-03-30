@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Monitoring App User Survey - Results</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Health Monitoring App User Survey - Results</h2>
+        <div id="results"></div>
+    </div>
+
+    <script>
+        // Function to parse query parameters from URL
+        function parseQueryParams() {
+            var queryParams = window.location.search.substring(1).split('&');
+            var params = {};
+            for (var i = 0; i < queryParams.length; i++) {
+                var pair = queryParams[i].split('=');
+                params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
+            }
+            return params;
+        }
+
+        // Retrieve form data from query parameters
+        var formData = parseQueryParams();
+
+        // Display form results
+        if (formData.name && formData.age) {
+            document.getElementById("results").innerHTML = `
+                <p><strong>Name:</strong> ${formData.name}</p>
+                <p><strong>Age:</strong> ${formData.age}</p>
+                <!-- Add other form fields here -->
+            `;
+        } else {
+            document.getElementById("results").innerHTML = "<p>No survey data available.</p>";
+        }
+    </script>
+</body>
+</html>
+
