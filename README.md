@@ -7,7 +7,26 @@ You can navigate this site here:  https://nabutech.github.io/Healthcare_IoT_App_
 
 ## Overview
 
-The Healthcare IoT Application leverages the flexibility of a Raspberry Pi to act as a server, collating data from IoT devices and hosting a user-friendly interface. The key feature of this application is its voice-activated interface, which displays real-time health monitoring data on a TV screen, obtained from IoT devices such as smart wearables like the Apple Watch.
+The Healthcare IoT Application is a cutitng-edge project aimed at improving health monitoring using Internet of Things (IoT) technology. My vision is to create a user-friendly interface based on voice interaction that integrates with wearable devices and other smart devices, to provide real-time health data to users.
+
+## Product Idea
+
+Our product idea in development centers around leveraging the flexibility of a Raspberry Pi server to act as
+a central hub for collecting and analyzing health data from various IoT devices. The key feature of our application will be its voice-activated interface, allowing users to access their health metrics effortlessly.
+
+## Development Progress
+
+Currently, the project is in the ideation and planning phase. We are actively researching and exploring the best technologies and methodoliges to bring our vision to life. Stay tuned for updates on our progress!
+
+## Get Involved
+
+We value your input and feedback! Whether you're a healthcare proffesional, IoT enthusiast, or someone with experience of caring for elderly relatives, we welcome your thoughts and ideas.
+
+ - **Contribute**
+Interested in contributing to the project? Visit the project portal [here](https://nabutech.github.io/Healthcare_IoT_App_Project/) and see how you can get involved.
+
+- **Feedback**
+Have suggestions or comments on our product idea? For any inquiries or feedback, please contact [Nabutech](mailto:nabutech@proton.me).
 
 ## Repository Structure
 
@@ -20,21 +39,4 @@ The Healthcare IoT Application leverages the flexibility of a Raspberry Pi to ac
 - **Presentation**: Presentation slides for each assignment.
 - **LICENSE**: License information for the project.
 - **README.md**: You are here! This file provides an overview of the project and instructions on navigating the repository.
-
-## Usage
-
-To get started with the Healthcare IoT Application, please refer to the documentation and source code provided in this repository. Each folder contains detailed instructions and resources relevant to its contents.
-
-## Contributing
-
-We welcome contributions from the community! If you have any suggestions, bug fixes, or enhancements, please feel free to open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Contact
-
-For any inquiries or feedback, please contact [Nabutech](mailto:nabutech@proton.me).
-
 
