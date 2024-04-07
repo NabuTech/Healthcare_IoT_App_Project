@@ -7,7 +7,7 @@ You can navigate this site here:  https://nabutech.github.io/Healthcare_IoT_App_
 
 ## Overview
 
-The Healthcare IoT Application is a cutitng-edge project aimed at improving health monitoring using Internet of Things (IoT) technology. My vision is to create a user-friendly interface based on voice interaction that integrates with wearable devices and other smart devices, to provide real-time health data to users.
+The Healthcare IoT Application is a cutting-edge project aimed at improving health monitoring using Internet of Things (IoT) technology. My vision is to create a user-friendly interface based on voice interaction that integrates with wearable devices and other smart devices, to provide real-time health data to users.
 
 ## Product Idea
 
