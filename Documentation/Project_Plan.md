@@ -1,43 +1,46 @@
 # Project Plan
 
-## Thur 21/03/2024
+## Project Initiation
 
-Survey
+- [] Define Scope and Objectives
+- [] Create Product Landing Page of Scope and Objectives.
 
-[] Migrate Landing Page to this Repository
-[] Add Links to Survey and Evaluation page
-[] Check User Survey Form
-[] Move Survey to own page
-[] Add Functionality and Saving to User Survey Form
-[] Zapier setup to add results of survey to email and google documents.
-[] Add Nabutech Footer to Landing Page
-[] Add Nabutech Footer to Learn More Page.
-[] Create Evaluation Page and Signup to Google Docs with Zapier
-[] Split sideshow to concept and competitors
+## Business Case Development
 
-Evaluation
-[] Find 4 Evaluators of Apple Health App, Google Fit, Amazon Echo Show
+- [] Conduct Market Research and Competitor Analysis
+- [] Develop business case outlining the need, objectives, and benefits of the Healthcare IoT Application
 
-Publish
-[] Publish link to landing page on Twitter and LinkedIn and find some participants
+## Requirements Gathering
 
-Resource - https://www.klientboost.com/landing-pages/landing-page-for-startup/
+- [] User Interviews to understand user needs and preferences
+- [] Identify functional and non-functional requirements
+- [] Create personas and scenarios
+- [] Implement User Surveys
 
+## Analysis and Design
 
-## Mon 25/3/24
+- [] Evaluating existing products for insights
+- [] Develop a concept model and initial design sketches
+- [] Create low-resolution wireframes and task flows
 
-- [y] Task 1
-    - [] Update Project Portal
-- [] Task 2
-    - [] Finish User Surveys
-    - [] Complete 4 Surveys
-    - [] Survey Report
-- [] Task 3
-    - [] Evaluator Profiles
-    - [] Evaluation Report
-- [y] Task 4
-- [y] Task 5
-- [] Task 6
-    - [] Task Flow Diagram
-    - [] Wireframe Sketches.
+## Prototype Development
+
+- [] Develop an interactive prototype based on design sketches and wireframes
+- [] Conduct iterative design sessions for refinement
+
+## Prototype Evaluation
+
+- [] Recruit participants for prototype evaluation
+- [] Conduct usability testing using appropriate protocols
+- [] Gather feedback and identify areas for improvement
+
+## Finalization and Documentation
+
+- [] Incorporate feedback and make neccessary revisions to the prototype
+- [] Prepare final design documentation, including the prototype, analysis reports, and user documentation
+
+## Project Closure
+
+- [] Present the final deliverables to stakeholders
+- [] Conduct a post-implementation review to assess project success and lessons learned
 
