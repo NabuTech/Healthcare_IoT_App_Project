@@ -32,23 +32,27 @@ body {
     height: 100%; 
 }
 
-.learn-more-button {
+.btn.btn-primary {
     margin-top: 20px; 
     padding: 10px 20px;
-    background-color: var(--primary-color);
-    color: #FFFFFF;
+    background-color: var(--accent-color1); /* Use accent-color1 for primary buttons */
+    color: var(--secondary-color); /* Use secondary-color for text color */
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s ease;
     display: inline-block; 
     max-width: 200px; 
     text-align: center; 
+    margin-bottom: 20px;
 }
 
-.learn-more-button:hover {
-    background-color: var(--accent-color1);
+.btn.btn-primary:hover {
+    background-color: var(--primary-color); /* Change to primary-color on hover */
+    color: var(--secondary-color); /* Adjust text color on hover */
     text-decoration: none;
 }
+
+
 
 /* Your existing CSS styles here */
 
@@ -363,4 +367,11 @@ button:hover {
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+@media (max-width: 767px) {
+    .carousel-item-content h3,
+    .carousel-item-content ul {
+        color: white; /* Change text color to white */
+    }
 }

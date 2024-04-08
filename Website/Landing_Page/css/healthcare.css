@@ -378,13 +378,37 @@ button:hover {
     background-color: var(--accent-color1);
 }
 #myCarousel {
-    background-color: var(--accent-color1); 
-    margin: 0;
-    padding: 0;
+    position: relative; /* Ensure the carousel container is positioned relatively */
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute; /* Position the controls absolutely within the carousel container */
+    top: 0; /* Position controls at the top of the carousel */
+    bottom: auto; /* Ensure controls don't overlap with carousel items */
+    z-index: 1000; /* Ensure controls are above carousel items */
+}
+
+.carousel-control-prev {
+    left: 0; /* Position previous control on the left */
+}
+
+.carousel-control-next {
+    right: 0; /* Position next control on the right */
+}
+
+
 .carousel-item {
-    color: var(--secondary-color);
+    position: relative; /* Ensure the carousel items are positioned relatively */
+}
+
+ 
+.carousel-item-content {
+    position: absolute; /* Position the item content absolutely */
+    top: 50%; /* Position the content vertically centered */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    width: 100%; /* Ensure content spans the full width of the carousel */
+    z-index: 1; /* Ensure content is above controls */
 }
 
 .carousel-item h3 {
@@ -404,12 +428,11 @@ button:hover {
     object-position: center;
 }
 
-.carousel-item-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+@media (max-width: 991px) {
+    .carousel-item-content h3,
+    .carousel-item-content ul {
+        color: white; /* Change text color to white */
+    }
 }
 
 #get-involved {
