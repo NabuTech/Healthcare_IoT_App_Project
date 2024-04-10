@@ -108,3 +108,11 @@ body {
   .wireframe-item img:hover {
     transform: scale(2.5); /* Scale the image slightly on hover */
   }
+
+  @media (max-width: 768px) {
+    /* Change from row to column layout */
+    .comparison-row {
+        display: flex;
+        flex-direction: column;
+    }
+}

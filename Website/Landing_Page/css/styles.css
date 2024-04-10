@@ -369,9 +369,10 @@ button:hover {
     height: 100%;
 }
 
-@media (max-width: 767px) {
-    .carousel-item-content h3,
-    .carousel-item-content ul {
-        color: white; /* Change text color to white */
+@media (max-width: 768px) {
+    /* Change from row to column layout */
+    .comparison-row {
+        display: flex;
+        flex-direction: column;
     }
 }
