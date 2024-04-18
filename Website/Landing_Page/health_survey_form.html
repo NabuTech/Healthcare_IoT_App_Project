@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="./css/minify_styles.css">
 
     <title>Healthcare IoT Patient Monitoring</title>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("8NOQnKENbglL-Xvq0");
+
+        })();
+    </script>
 </head>
 
 <body>
@@ -19,11 +28,17 @@
 
                 <!-- New Name Question -->
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
+                <input type="text" id="name" name="name"><br><br>
 
-                <!-- New Age Question -->
-                <label for="age">Age:</label>
-                <input type="number" id="age" name="age" required><br><br>
+                <label for="age-range">Age Range:</label>
+                <select id="age-range" name="AgeRange">
+                    <option value="Under 25">Under 25</option>
+                    <option value="26 - 35">26 - 35</option>
+                    <option value="36 - 45">36 - 45</option>
+                    <option value="46 - 55">46 - 55</option>
+                    <option value="56 - 65">56 - 65</option>
+                    <option value="Over 65">Over 65</option>
+                </select>
 
 
                         <label for="user-status">What would best describe your interest in the app?</label>
@@ -121,14 +136,49 @@
                         <label for="improvements-to-existing-apps">If there's one thing you could change or improve in existing health monitoring apps, what would it be?</label>
                         <textarea id="improvements-to-existing-apps" name="improvements-to-existing-apps"></textarea>
 
+                        <!-- Checkbox for future contact -->
+                        <input type="checkbox" id="future-contact" name="FutureContact">
+                        <label for="future-contact">I agree to be contacted for future developments</label>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+
                         <button type="submit" id="submit-survey">Submit Survey</button>
             </fieldset>
         </form>
     </div>
 
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("8NOQnKENbglL-Xvq0");
+        })();
+        
+        document.getElementById('health-survey-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Fetch form data
+            const formData = new FormData(this);
+            // Handle checkbox value
+            const futureContactCheckbox = document.getElementById('future-contact');
+            formData.append('FutureContact', futureContactCheckbox.checked ? 'Yes' : 'No');
+
+            // Log form data to console
+            console.log(formData);
+    
+        
+            // Send email using EmailJS
+            emailjs.sendForm('service_yw2j8f6', 'template_ftv96p9', '#health-survey-form', '8NOQnKENbglL-Xvq0')
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('Your survey has been submitted successfully!');
+                }, function(error) {
+                    console.error('FAILED...', error);
+                    alert('Sorry, an error occurred while submitting your survey. Please try again later.');
+                });
+        });
+    </script>
     
 
 </body>
 
 </html>
-    
