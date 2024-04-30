@@ -2,26 +2,26 @@
 
 ## Project Initiation
 
-- [ ] Define Scope and Objectives
-- [ ] Create Product Landing Page of Scope and Objectives.
+- [x] Define Scope and Objectives
+- [x] Create Product Landing Page of Scope and Objectives.
 
 ## Business Case Development
 
-- [ ] Conduct Market Research and Competitor Analysis
-- [ ] Develop business case outlining the need, objectives, and benefits of the Healthcare IoT Application
+- [x] Conduct Market Research and Competitor Analysis
+- [x] Develop business case outlining the need, objectives, and benefits of the Healthcare IoT Application
 
 ## Requirements Gathering
 
-- [ ] User Interviews to understand user needs and preferences
-- [ ] Identify functional and non-functional requirements
-- [ ] Create personas and scenarios
-- [ ] Implement User Surveys
+- [x] User Interviews to understand user needs and preferences
+- [x] Identify functional and non-functional requirements
+- [x] Create personas and scenarios
+- [x] Implement User Surveys
 
 ## Analysis and Design
 
-- [ ] Evaluating existing products for insights
-- [ ] Develop a concept model and initial design sketches
-- [ ] Create low-resolution wireframes and task flows
+- [x] Evaluating existing products for insights
+- [x] Develop a concept model and initial design sketches
+- [x] Create low-resolution wireframes and task flows
 
 ## Prototype Development
 
